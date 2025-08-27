@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        *{
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #BB0A21;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            padding-left: 20vw;
+            padding-right: 20vw;
+        }
+        .navbar h1 {
+            color: white;
+        }
+        .navbar input {
+            border: none;
+        }
+        .navbar button {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 1em;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .content {
+            padding-left: 20vw;
+            padding-right: 20vw;
+            display: flex;
+            margin-top: 15vh;
+            margin-bottom: 15vh;
+            justify-content: space-around;
+            align-items: center;
+            gap: 5em;
+        }
+        .content > div {
+            flex: 1;
+        }
+        input {
+            padding: 1em;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+        }
+        .description {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+        }
+        .description h1{
+            font-size: 3em;
+        }
+        .description p {
+            font-size: 1.3em;
+        }
+        form input {
+            width: 100%;
+        }
+        .login-form button {
+            background-color: #1B5E20;
+            border: none;
+            border-radius: 5px;
+            padding: 1em;
+            color: white;
+            width: 100%;
+            font-size: 1em;
+        }
+        .footer {
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid gray;
+            padding-top: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="appname">
+            <h1>Our App</h1>
+        </div>
+
+        <div class="navitems">
+            <input type="text" name="" id="">
+            <input type="text" name="" id="">
+            <button>Sign In</button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="description">
+            <h1>Remember Writing?</h1>
+            <p>Are you sick of short tweets and impersonal "shared" posts that are
+                reminiscent of the late 90's email forward? We believe getting back to actually
+                Writing is the key to enjoying the internet again.
+            </p>
+        </div>
+        <div class="login-form">
+            <form>
+                <div class="username">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" placeholder="Pick a username" id="">
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="you@example.com" id="">
+                </div>
+                <div class="password">
+                    <label for="Password">Password</label>
+                    <input type="password" name="password" placeholder="Create Password" id="">
+                </div>
+                <div class="passord2">
+                     <label for="password2">Confirm Password</label>
+                     <input type="password" name="password2" placeholder="Confirm Password" id="">
+                </div>
+                <button type="submit">Sing up for OurApp</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright &copy; OurApp 2025</p>
+    </div>
+</body>
+</html>
