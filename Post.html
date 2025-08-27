@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OurApp - Create Post</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f44336; 
+      color: white;
+      padding: 12px 20px;
+    }
+
+    .navbar .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .navbar .actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .navbar button,
+    .navbar .create-btn {
+      border: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .navbar .create-btn {
+      background-color: #4caf50; 
+      color: white;
+    }
+
+    .navbar .signout-btn {
+      background-color: #555;
+      color: white;
+    }
+
+    .navbar img.profile {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .navbar .icon {
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    textarea {
+      min-height: 200px;
+      resize: vertical;
+    }
+
+    .save-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .save-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">OurApp</div>
+    <div class="actions">
+      <span class="icon">🔍</span>
+      <span class="icon">💬</span>
+      <img src="https://picsum.photos/200" alt="Profile" class="profile" />
+      <button class="create-btn">Create Post</button>
+      <button class="signout-btn">Sign Out</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" />
+      </div>
+      <div class="form-group">
+        <label for="body">Body Content</label>
+        <textarea id="body" name="body"></textarea>
+      </div>
+      <button type="submit" class="save-btn">Save New Post</button>
+    </form>
+  </div>
+</body>
+</html>
